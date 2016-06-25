@@ -9,4 +9,8 @@ cd ..\designer-Qt4Qt5
 "C:\Qt\qt-5.6.0-x86-msvc2013\5.6\msvc2013\bin\qmake.exe" designer.pro
 nmake
 nmake install
+cd ..\Python
+C:\Python27\python.exe configure.py --spec=win32-msvc2013 --pyqt=PyQt5 --qmake=C:\Qt\qt-5.6.0-x86-msvc2013\5.6\msvc2013\bin\qmake.exe
+nmake
+nmake install
 cd ..
