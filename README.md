@@ -1,5 +1,7 @@
 # Prerequisites
 
+Compile scripts for PyQt5 (Qt 5.6.0), Python 2.7.11 and MSVC 2013. To be used by [x64dbg](http://x64dbg.com).
+
 1. Install VS2013 so you have `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat`
 2. Install Qt 5.6.0 (x86) so you have `C:\Qt\qt-5.6.0-x86-msvc2013\5.6\msvc2013\bin\qmake.exe`
 3. Install Qt 5.6.0 (x64) so you have `C:\Qt\qt-5.6.0-x64-msvc2013\5.6\msvc2013_64\bin\qmake.exe`
@@ -21,7 +23,7 @@
 
 1. Copy `QScintilla\python27_32_msvc2013_32_build.bat` to `C:\QScintilla_gpl-2.9.2\python27_32_msvc2013_32_build.bat`
 2. Run `C:\QScintilla_gpl-2.9.2\python27_32_msvc2013_32_build.bat`
-3. You should now have `c:\Qt\qt-5.6.0-x86-msvc2013\5.6\msvc2013\lib\qscintilla2.dll`
+3. You should now have `C:\Qt\qt-5.6.0-x86-msvc2013\5.6\msvc2013\lib\qscintilla2.dll`
 
 # Building PyQt5 (x86)
 
