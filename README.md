@@ -2,6 +2,8 @@
 
 Compile scripts for PyQt5 (Qt 5.6.0), Python 2.7.11 and MSVC 2013. To be used by [x64dbg](http://x64dbg.com). Based on [Ida_Pro_Ultimate_Qt_Build_Guide](https://github.com/techbliss/Ida_Pro_Ultimate_Qt_Build_Guide) by Storm Shadow.
 
+When it says *Extract* make sure to completely remove the previous directory if present.
+
 ## Prerequisites
 
 1. Install VS2013 so you have `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat`
@@ -10,7 +12,7 @@ Compile scripts for PyQt5 (Qt 5.6.0), Python 2.7.11 and MSVC 2013. To be used by
 4. Install Python 2.7.11 (x86) so you have `C:\Python27\python.exe`
 5. Install Python 2.7.11 (x64) so you have `C:\Python27-64\python.exe`
 
-## Building sip
+## Building sip (x86)
 
 1. Extract `sip-4.18.zip` so you have `C:\sip-4.18\configure.py`
 2. Copy `sip\python27_32_msvc2013_32_build.bat` to `C:\sip-4.18\python27_32_msvc2013_32_build.bat`
@@ -29,6 +31,13 @@ Compile scripts for PyQt5 (Qt 5.6.0), Python 2.7.11 and MSVC 2013. To be used by
 2. Copy `QScintilla\python27_32_msvc2013_32_build.bat` to `C:\QScintilla_gpl-2.9.2\python27_32_msvc2013_32_build.bat`
 3. Run `C:\QScintilla_gpl-2.9.2\python27_32_msvc2013_32_build.bat`
 4. You should now have `C:\Qt\qt-5.6.0-x86-msvc2013\5.6\msvc2013\lib\qscintilla2.dll`
+
+## Building sip (x64)
+
+1. Extract `sip-4.18.zip` so you have `C:\sip-4.18\configure.py`
+2. Copy `sip\python27_64_msvc2013_64_build.bat` to `C:\sip-4.18\python27_64_msvc2013_64_build.bat`
+3. Run `C:\sip-4.18\python27_64_msvc2013_64_build.bat`
+4. You should now have `c:\Python27-64\sip.exe`
 
 ## Building PyQt5 (x64)
 
